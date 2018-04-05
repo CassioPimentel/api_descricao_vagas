@@ -7,9 +7,9 @@ db.on('error', console.error.bind(console, 'Erro ao conectar no banco')); //se h
 
 db.once('open', function(){ //no evento de abertura da conexao, cria o esquema do banco
 
-	var nomeVagasSchema = mongoose.Schema({
+	var nomeVagaSchema = mongoose.Schema({
 		titulo: String
-	});
+	}, {collection: 'nomeVagas'});
 
-	exports.nomeVagas = mongoose.model('nomeVagas', nomeVagasSchema);
+	exports.nomeVagas = mongoose.model('nomeVagas', nomeVagaSchema);
 });

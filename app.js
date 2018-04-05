@@ -3,7 +3,7 @@ var NomeVagasController = require('./controllers/NomeVagasController.js');
 
 app.get('/', function(req, res){
 
-	res.json('Bem vindo a API de empregos e cidades');
+	res.json('Bem vindo a API de nome de vagas');
 });
 
 app.get('/nomeVaga/:titulo', function(req, res){ 
